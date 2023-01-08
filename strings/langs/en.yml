@@ -1,4 +1,4 @@
-name : 🏴󠁧󠁢󠁥󠁮󠁧󠁿 English
+name : 🏴󠁧󠁢󠁥󠁮󠁧Semi Toxic Language
 
 # General Strings
 # General Strings
@@ -205,7 +205,7 @@ lyrics_3 : "❌ Failed to fetch lyrics😭.\n\n💡**Tried Searching For:** {0}"
 lyrics_4 : "Click on the button below and get searched lyrics to avoid long spam types lyrics search."
 
 #Ping
-ping_1 : "Pong!!!!"
+ping_1 : "DUARRR MEMEKKKKK"
 ping_2 : "{0} is working good with a ping of `{1}` ms.\n\nBot's uptime is {2} and has used a total of {3} server's storage. Cpu load is about {4} with a consumption of {5} Ram. Py-Tgcalls client is also having a good ping of `{6}` ms."
 
 
@@ -344,7 +344,7 @@ QU_B_2 : "Dimainkan {0} dari {1} Menit"
 # Sudo Users [ If you are translating this to some other language .. you can leave all these strings in english language]
 
 #Sudo
-sudo_1 : "{0} is already a sudo user."
+sudo_1 : "{0} DAH JADI BABUNYA SI AMANG BLOK."
 sudo_2 : "MENAMBAHKAN **{0}** KE ADMIN BOT BUAT NGE GBAN KACUNG TELE." 
 sudo_3 : "Not a part of Bot's Sudo."
 sudo_4 : "Removed from Bot's Sudo User"
@@ -357,8 +357,8 @@ block_1 : "{0} is already blocked from the bot."
 block_2 : "MAMPUS **{0}** , LO GUA BLOCK PPK. GABISA NGEPLAY KAN LU..YAHAHAHA\n\nCEK JAWIR YANG DI BLOCK : /blockedusers"
 block_3 : "User is already free and not blocked."
 block_4 : "DAHLAH KASIAN JAWIR DI BLOCK,NIH GUA LEPAS WKWK."
-block_5 : "GAADA YANG DIBLOK"
-block_6 : "SAIAP SI YG GUA BLOCK?, BENTAR GUA CEK"
+block_5 : "GAADA YANG DIBLOK TOLOL"
+block_6 : "SIAPA SI YG GUA BLOCK?, BENTAR GUA CEK"
 block_7 : "**MAMPUS GUA BLOCK LU TOLOL:**\n\n"
 
 #Blacklist Chats
@@ -393,7 +393,7 @@ vidmode_2 : "Video Play Mode set as downloader. Bot will be downloading tracks n
 vidmode_3 : "Video Play Mode set as m3u8. Bot will be play tracks live now."
 
 #broadcast
-broad_1 : "**Broadcasted Message In {0}  Chats with {1} Pins from Bot.**"
+broad_1 : "**NGEBROADCAST KE {0}  CHAT DENGAN {1} PIN DARI BABU.**"
 broad_2 : "Started Assistant Broadcast..."
 broad_3 : "**Assistant Broadcast:**\n\n"
 broad_4 : "Assistant {0} Broadcasted in {1} chats\n"
@@ -440,7 +440,7 @@ gban_2 : "Should i block myself? Lol"
 gban_3 : "You want to block a sudo user?"
 gban_4 : "{0} is already **gbanned** from the bot."
 gban_5 : "**SEDANG MENG GBAN JAWIR {0}**\n\nExpected Time : {1}."
-gban_6 : "**HAHAHA, MAMPUS LU GUA GBAN**\n\nGUA GBAN LU **{0}** DARI 129 GC/CH."
+gban_6 : "**HAHAHA, MAMPUS LU GUA GBAN**\n\nWOI **{0}** LU GUA GBAN DARI 129 GC/CH."
 gban_7 : "{0} is not **gbanned **yet from the bot."
 gban_8 : "**Ungbanning {0}**\n\nExpected Time : {1}."
 gban_9 : "**DAH AH KASIAN NGEGBAN YATIM**\n\nUnbanned **{0}** in 129 GC/CH."
