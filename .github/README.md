@@ -16,6 +16,8 @@
 
 ## ⚠️ Heroku
 
+**HEROKU SEDANG TIDAK BAIK BAIK SAJA, MENDEPLOY BOT MUSIC MENGGUNAKAN HEROKU = MEMBERIKAN PELUANG DEVELOPER HEROKU UNTUK MEN SUSPEND AKUN KALIAN, DISARANKAN UNTUK MENGGUNAKAN VPS**
+
 <p align="left">
 <a href="https://dashboard.heroku.com/new?template=https://github.com/amanqs/AmangMusic.git"><img src="https://img.shields.io/badge/Deploy%20To%20Heroku-blueviolet?style=for-the-badge&logo=heroku" width="250""/</a>
 
