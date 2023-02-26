@@ -1,6 +1,6 @@
 <img src="https://te.legra.ph/file/15a711b06565578a5eef5.jpg" align="right" width="200" height="200"/>
 
-# Amang Music Bot <img src="https://img.shields.io/github/v/release/amangtele/AmangMusic?color=black&logo=github&logoColor=black&style=social" alt="RELEASE">
+# Amang Music Bot <img src="https://img.shields.io/github/v/release/amanqs/AmangMusic?color=black&logo=github&logoColor=black&style=social" alt="RELEASE">
 
 [Amang Music Bot](https://github.com/amangtele/AmangMusic) is a Powerful Telegram Music+Video Bot written in Python using Pyrogram and Py-Tgcalls by which you can stream songs, video and even live streams in your group calls via various sources.
 
