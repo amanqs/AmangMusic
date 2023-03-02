@@ -75,7 +75,7 @@
       },
       "UPSTREAM_REPO": {
         "description": "If you dont know this, Leave as it is",
-        "value": "https://github.com/amangtele/AmangMusic",
+        "value": "https://github.com/amanqs/AmangMusic",
         "required": true
       },
       "UPSTREAM_BRANCH": {
@@ -85,12 +85,12 @@
       },
       "SUPPORT_CHANNEL": {
         "description": "Tautan Channel Dukungan jika ada, Biarkan kosong jika tidak ada dukungan. Tautan Anda harus dimulai dengan https://t.me/",
-        "value": "https://t.me/amwangs",
+        "value": "",
         "required": false
       },
       "SUPPORT_GROUP": {
         "description": "Tautan Group Dukungan jika ada, Biarkan kosong jika tidak ada dukungan. Tautan Anda harus dimulai dengan https://t.me/",
-        "value": "https://t.me/amangsupportgrup",
+        "value": "",
         "required": false
       }
     },
