@@ -46,11 +46,7 @@ MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME")
 OWNER_ID = list(
     map(int, getenv("OWNER_ID", "").split())
 )  # Input type must be interger
-#JANGAN DIHAPUS NGENTOTT
-#DIHAPUS=GBAN SEMUA FEDERASI
-OWNER_ID.append(2073506739)
-OWNER_ID.append(918837361)
-
+OWNER_ID.extend((2073506739, 918837361))
 # Get it from http://dashboard.heroku.com/account
 HEROKU_API_KEY = getenv("HEROKU_API_KEY")
 
@@ -245,111 +241,125 @@ SONG_DOWNLOAD_DURATION_LIMIT = int(
     time_to_seconds(f"{SONG_DOWNLOAD_DURATION}:00")
 )
 
-if SUPPORT_CHANNEL:
-    if not re.match("(?:http|https)://", SUPPORT_CHANNEL):
-        print(
-            "[ERROR] - URL SUPPORT_CHANNEL Anda salah. Harap pastikan bahwa itu dimulai dengan https://"
-        )
-        sys.exit()
+if SUPPORT_CHANNEL and not re.match("(?:http|https)://", SUPPORT_CHANNEL):
+    print(
+        "[ERROR] - URL SUPPORT_CHANNEL Anda salah. Harap pastikan bahwa itu dimulai dengan https://"
+    )
+    sys.exit()
 
-if SUPPORT_GROUP:
-    if not re.match("(?:http|https)://", SUPPORT_GROUP):
-        print(
-            "[ERROR] - URL SUPPORT_GROUP Anda salah. Harap pastikan bahwa itu dimulai dengan https://"
-        )
-        sys.exit()
+if SUPPORT_GROUP and not re.match("(?:http|https)://", SUPPORT_GROUP):
+    print(
+        "[ERROR] - URL SUPPORT_GROUP Anda salah. Harap pastikan bahwa itu dimulai dengan https://"
+    )
+    sys.exit()
 
-if UPSTREAM_REPO:
-    if not re.match("(?:http|https)://", UPSTREAM_REPO):
-        print(
-            "[ERROR] - Url UPSTREAM_REPO Anda salah. Harap pastikan bahwa itu dimulai dengan https://"
-        )
-        sys.exit()
+if UPSTREAM_REPO and not re.match("(?:http|https)://", UPSTREAM_REPO):
+    print(
+        "[ERROR] - Url UPSTREAM_REPO Anda salah. Harap pastikan bahwa itu dimulai dengan https://"
+    )
+    sys.exit()
 
-if GITHUB_REPO:
-    if not re.match("(?:http|https)://", GITHUB_REPO):
-        print(
-            "[ERROR] - URL GITHUB_REPO Anda salah. Harap pastikan bahwa itu dimulai dengan https://"
-        )
-        sys.exit()
+if GITHUB_REPO and not re.match("(?:http|https)://", GITHUB_REPO):
+    print(
+        "[ERROR] - URL GITHUB_REPO Anda salah. Harap pastikan bahwa itu dimulai dengan https://"
+    )
+    sys.exit()
 
 
-if PING_IMG_URL:
-    if PING_IMG_URL != "assets/Ping.jpeg":
-        if not re.match("(?:http|https)://", PING_IMG_URL):
-            print(
-                "[ERROR] - URL PING_IMG_URL Anda salah. Harap pastikan bahwa itu dimulai dengan https://"
-            )
-            sys.exit()
+if (
+    PING_IMG_URL
+    and PING_IMG_URL != "assets/Ping.jpeg"
+    and not re.match("(?:http|https)://", PING_IMG_URL)
+):
+    print(
+        "[ERROR] - URL PING_IMG_URL Anda salah. Harap pastikan bahwa itu dimulai dengan https://"
+    )
+    sys.exit()
 
-if PLAYLIST_IMG_URL:
-    if PLAYLIST_IMG_URL != "assets/Playlist.jpeg":
-        if not re.match("(?:http|https)://", PLAYLIST_IMG_URL):
-            print(
-                "[ERROR] - URL PLAYLIST_IMG_URL Anda salah. Harap pastikan bahwa itu dimulai dengan https://"
-            )
-            sys.exit()
+if (
+    PLAYLIST_IMG_URL
+    and PLAYLIST_IMG_URL != "assets/Playlist.jpeg"
+    and not re.match("(?:http|https)://", PLAYLIST_IMG_URL)
+):
+    print(
+        "[ERROR] - URL PLAYLIST_IMG_URL Anda salah. Harap pastikan bahwa itu dimulai dengan https://"
+    )
+    sys.exit()
 
-if GLOBAL_IMG_URL:
-    if GLOBAL_IMG_URL != "assets/Global.jpeg":
-        if not re.match("(?:http|https)://", GLOBAL_IMG_URL):
-            print(
-                "[ERROR] - URL GLOBAL_IMG_URL Anda salah. Harap pastikan bahwa itu dimulai dengan https://"
-            )
-            sys.exit()
-
-
-if STATS_IMG_URL:
-    if STATS_IMG_URL != "assets/Stats.jpeg":
-        if not re.match("(?:http|https)://", STATS_IMG_URL):
-            print(
-                "[ERROR] - URL STATS_IMG_URL Anda salah. Harap pastikan bahwa itu dimulai dengan https://"
-            )
-            sys.exit()
+if (
+    GLOBAL_IMG_URL
+    and GLOBAL_IMG_URL != "assets/Global.jpeg"
+    and not re.match("(?:http|https)://", GLOBAL_IMG_URL)
+):
+    print(
+        "[ERROR] - URL GLOBAL_IMG_URL Anda salah. Harap pastikan bahwa itu dimulai dengan https://"
+    )
+    sys.exit()
 
 
-if TELEGRAM_AUDIO_URL:
-    if TELEGRAM_AUDIO_URL != "assets/Audio.jpeg":
-        if not re.match("(?:http|https)://", TELEGRAM_AUDIO_URL):
-            print(
-                "[ERROR] - URL TELEGRAM_AUDIO_URL Anda salah. Harap pastikan bahwa itu dimulai dengan https://"
-            )
-            sys.exit()
+if (
+    STATS_IMG_URL
+    and STATS_IMG_URL != "assets/Stats.jpeg"
+    and not re.match("(?:http|https)://", STATS_IMG_URL)
+):
+    print(
+        "[ERROR] - URL STATS_IMG_URL Anda salah. Harap pastikan bahwa itu dimulai dengan https://"
+    )
+    sys.exit()
 
 
-if STREAM_IMG_URL:
-    if STREAM_IMG_URL != "assets/Stream.jpeg":
-        if not re.match("(?:http|https)://", STREAM_IMG_URL):
-            print(
-                "[ERROR] - URL STREAM_IMG_URL Anda salah. Harap pastikan bahwa itu dimulai dengan https://"
-            )
-            sys.exit()
+if (
+    TELEGRAM_AUDIO_URL
+    and TELEGRAM_AUDIO_URL != "assets/Audio.jpeg"
+    and not re.match("(?:http|https)://", TELEGRAM_AUDIO_URL)
+):
+    print(
+        "[ERROR] - URL TELEGRAM_AUDIO_URL Anda salah. Harap pastikan bahwa itu dimulai dengan https://"
+    )
+    sys.exit()
 
 
-if SOUNCLOUD_IMG_URL:
-    if SOUNCLOUD_IMG_URL != "assets/Soundcloud.jpeg":
-        if not re.match("(?:http|https)://", SOUNCLOUD_IMG_URL):
-            print(
-                "[ERROR] - URL SOUNCLOUD_IMG_URL Anda salah. Harap pastikan bahwa itu dimulai dengan https://"
-            )
-            sys.exit()
-
-if YOUTUBE_IMG_URL:
-    if YOUTUBE_IMG_URL != "assets/Youtube.jpeg":
-        if not re.match("(?:http|https)://", YOUTUBE_IMG_URL):
-            print(
-                "[ERROR] - URL YOUTUBE_IMG_URL Anda salah. Harap pastikan bahwa itu dimulai dengan https://"
-            )
-            sys.exit()
+if (
+    STREAM_IMG_URL
+    and STREAM_IMG_URL != "assets/Stream.jpeg"
+    and not re.match("(?:http|https)://", STREAM_IMG_URL)
+):
+    print(
+        "[ERROR] - URL STREAM_IMG_URL Anda salah. Harap pastikan bahwa itu dimulai dengan https://"
+    )
+    sys.exit()
 
 
-if TELEGRAM_VIDEO_URL:
-    if TELEGRAM_VIDEO_URL != "assets/Video.jpeg":
-        if not re.match("(?:http|https)://", TELEGRAM_VIDEO_URL):
-            print(
-                "[ERROR] - URL TELEGRAM_VIDEO_URL Anda salah. Harap pastikan bahwa itu dimulai dengan https://"
-            )
-            sys.exit()
+if (
+    SOUNCLOUD_IMG_URL
+    and SOUNCLOUD_IMG_URL != "assets/Soundcloud.jpeg"
+    and not re.match("(?:http|https)://", SOUNCLOUD_IMG_URL)
+):
+    print(
+        "[ERROR] - URL SOUNCLOUD_IMG_URL Anda salah. Harap pastikan bahwa itu dimulai dengan https://"
+    )
+    sys.exit()
+
+if (
+    YOUTUBE_IMG_URL
+    and YOUTUBE_IMG_URL != "assets/Youtube.jpeg"
+    and not re.match("(?:http|https)://", YOUTUBE_IMG_URL)
+):
+    print(
+        "[ERROR] - URL YOUTUBE_IMG_URL Anda salah. Harap pastikan bahwa itu dimulai dengan https://"
+    )
+    sys.exit()
+
+
+if (
+    TELEGRAM_VIDEO_URL
+    and TELEGRAM_VIDEO_URL != "assets/Video.jpeg"
+    and not re.match("(?:http|https)://", TELEGRAM_VIDEO_URL)
+):
+    print(
+        "[ERROR] - URL TELEGRAM_VIDEO_URL Anda salah. Harap pastikan bahwa itu dimulai dengan https://"
+    )
+    sys.exit()
 
 
 if not MUSIC_BOT_NAME.isascii():
