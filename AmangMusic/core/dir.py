@@ -17,7 +17,7 @@ from ..logging import LOGGER
 def dirr():
     if "assets" not in listdir():
         LOGGER(__name__).warning(
-            f"Folder Aset tidak Ditemukan. Silakan kloning repositori lagi."
+            "Folder Aset tidak Ditemukan. Silakan kloning repositori lagi."
         )
         sys.exit()
     for file in os.listdir():

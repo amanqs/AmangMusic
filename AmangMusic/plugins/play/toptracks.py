@@ -109,11 +109,9 @@ async def server_to_play(client, CallbackQuery, _):
                 break
             limit += 1
             details.append(vidid)
-        if not details:
-            return mystic.edit(
-                _["tracks_2"].format(what), reply_markup=upl
-            )
-        return details
+        return details or mystic.edit(
+            _["tracks_2"].format(what), reply_markup=upl
+        )
 
     try:
         details = await loop.run_in_executor(None, get_stats)
