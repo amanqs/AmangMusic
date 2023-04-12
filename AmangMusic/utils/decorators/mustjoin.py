@@ -8,7 +8,7 @@ def subcribe(func):
     async def wrapper(_, message: Message):
         user_id = message.from_user.id
         user_name = message.from_user.first_name
-        rpk = "[" + user_name + "](tg://user?id=" + str(user_id) + ")"
+        rpk = f"[{user_name}](tg://user?id={str(user_id)})"
         if not MUST_JOIN: 
             return
         try:
@@ -16,7 +16,7 @@ def subcribe(func):
                 await app.get_chat_member(MUST_JOIN, message.from_user.id)
             except UserNotParticipant:
                 if MUST_JOIN.isalpha():
-                    anjay = "https://t.me/" + MUST_JOIN
+                    anjay = f"https://t.me/{MUST_JOIN}"
                 else:
                     chat_info = await app.get_chat(MUST_JOIN)
                     chat_info.invite_link
