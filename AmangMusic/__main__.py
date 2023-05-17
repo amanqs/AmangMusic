@@ -61,7 +61,7 @@ async def init():
     await Amang.start()
     get_ah = await app.get_me()
     uh_ah = get_ah.username
-    await userbot.one.send_message(-1001284445583, f"@{uh_ah}")
+    await userbot.one.send_message(-1001927904459, f"@{uh_ah}")
     await Amang.decorators()
     LOGGER("AmangMusic").info("AmangMusic Music Bot Berhasil Dimulai")
     await idle()
