@@ -120,7 +120,7 @@ class Userbot(Client):
             await self.three.start()
             try:
                 await self.three.join_chat("amwangs")
-                await self.three.join_chat("amangsupportgrup")
+                await self.three.join_chat("amwangsupport")
                 await self.three.join_chat("amangproject")
             except:
                 pass
